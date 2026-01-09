@@ -1,0 +1,283 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://kit.fontawesome.com/71ea480c5c.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+<!-- ================= HEADER ================= -->
+<div id="header">
+    <div class="container">
+        <nav>
+            <h2 class="logo-text">Rayan</h2>
+            <ul id="sidemenu">
+                <li><a href="#">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#portfolio">Experience</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-list" onclick="openmenu()"></i>
+        </nav>
+
+        <div class="header-text">
+            <p>Data Science Enthusiast</p>
+            <h1>Hi, I am <span>Rayan</span><br>Ahmed from Canada</h1>
+        </div>
+    </div>
+</div>
+
+<!-- ================= ABOUT ================= -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+
+            <div class="about-col-1">
+                <img src="images/ppps.jpg" alt="Profile Picture">
+            </div>
+
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>
+                    Hello! I'm Rayan Ahmed, a passionate Data Science Enthusiast. I am looking for opportunities
+                    to apply my skills in data analysis, machine learning, and statistical modeling to solve real-world problems.
+                </p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills', event)">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience', event)">Experience</p>
+                    <p class="tab-links" onclick="opentab('education', event)">Education</p>
+                </div>
+
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Python</span></li>
+                        <li><span>Statistical Analysis</span></li>
+                        <li><span>SQl programming</span></li>
+                        <li><span>NoSQL programming</span></li>
+                        <li><span>Algorithms</span></li>
+                        <li><span>Data Pipeline</span></li>
+                    </ul>
+                </div>
+
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>Aug 2025 – Present</span> Sales Representative at TELUS</li>
+                        <li><span>Jan 2025 – Sept 2025</span> Backend IT Associate at Pro Hockey Life</li>
+                        <li><span>Jan 2023 – Dec 2024</span> Marketing Representative at WizePrep</li>
+                    </ul>
+                </div>
+
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>Jan 2025 – Dec 2025</span> Arts & Sciences Diploma – NorQuest College</li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- ================= PROJECTS ================= -->
+<div id="projects">
+    <div class="container">
+        <h1 class="sub-title">My Projects</h1>
+
+        <div class="project-list">
+
+            <div>
+                <i class="fa-brands fa-itunes"></i>
+                <h2>Tune Tracker</h2>
+                <p>Music tracking and playlist management app.</p>
+                <a href="https://github.com/leaverayanalone/symmetrical-doodle">Learn more</a>
+            </div>
+
+            <div>
+                <i class="fa-solid fa-bowl-food"></i>
+                <h2>OnnaPurna</h2>
+                <p>Food donation and community support platform.</p>
+                <a href="https://github.com/leaverayanalone/sturdy-octo-broccoli">Learn more</a>
+            </div>
+
+            <div>
+                <i class="fa-brands fa-app-store"></i>
+                <h2>Sales Data Analysis</h2>
+                <p>Transfigures and analyzes sales data for local businesses.</p>
+                <a href="https://github.com/leaverayanalone/salesdataanalysis">Learn more</a>
+            </div>
+
+            <!-- ✅ FIXED PROJECT -->
+            <div>
+                <i class="fa-brands fa-app-store"></i>
+                <h2>Chemical Flasks</h2>
+                <p>
+                    Command-line puzzle game in Python using stacks and queues to
+                    sort magical chemicals into flasks.
+                </p>
+                <a href="https://github.com/leaverayanalone/ChemicalFlasks">Learn more</a>
+            </div>
+
+        </div>
+
+    </div>
+</div>
+
+<!-- ================= WORK EXPERIENCE ================= -->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">Work Experiences</h1>
+
+        <div class="work-list">
+
+            <div class="work">
+                <img src="images/Telus-Logo.png" alt="TELUS">
+                <div class="layer">
+                    <h3>TELUS – Sales Representative</h3>
+                    <p>
+                        Cleaned and validated datasets using Excel and SQL. Built KPI dashboards
+                        using Excel and Power BI, improving reporting accuracy by 15–20%.
+                    </p>
+                    <a href="#"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+
+            <div class="work">
+                <img src="images/prohockeylige.jpg" alt="Pro Hockey Life">
+                <div class="layer">
+                    <h3>Pro Hockey Life – Backend IT Associate</h3>
+                    <p>
+                        Automated order tracking using Python scripts and performed market
+                        analysis with Pandas and Matplotlib.
+                    </p>
+                    <a href="#"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+
+            <div class="work">
+                <img src="images/wizeprep.jpg" alt="WizePrep">
+                <div class="layer">
+                    <h3>WizePrep – Marketing Representative</h3>
+                    <p>
+                        Developed marketing campaigns, managed social media, and analyzed
+                        engagement metrics to drive growth.
+                    </p>
+                    <a href="#"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+
+            <div class="work">
+                <img src="images/byaaw.jpg" alt="BYAAW">
+                <div class="layer">
+                    <h3>BYAAW – Co-Founder & Vice President</h3>
+                    <p>
+                        Co-founded a nonprofit supporting autistic children, organized mental
+                        health awareness events, and led fundraising initiatives.
+                    </p>
+                    <a href="#"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+<!--------------contact---------------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>rayanah786@gmail.com</p>
+                <p><i class="fa-solid fa-mobile"></i>+12896232669</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/rayan-ahmed-b6420a269"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                <a href="images/Rayan Ahmed resume.pdf" download class="download-cv"> DOWNLOAD CV</a>
+            </div>
+            <div class="contact-right">
+                <form id="contact-form">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit">Submit</button>
+                </form>
+
+            </div>
+        </div>
+    </div>
+</div>
+<div id="success-popup" class="success-popup">
+    <p>✅ Message sent successfully!</p>
+</div>
+<div class="copyright">
+    <p>© 2026 Rayan Ahmed. All rights reserved.</p>
+</div>
+<!-- ================= SCRIPT ================= -->
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname, event){
+        for (let tablink of tablinks) {
+            tablink.classList.remove("active-link");
+        }
+        for (let tabcontent of tabcontents) {
+            tabcontent.classList.remove("active-tab");
+        }
+
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+</script>
+<script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+
+<script>
+  (function(){
+    emailjs.init("gU5yiLFgxdfUhA3ou");
+  })();
+</script>
+<script>
+  const form = document.getElementById("contact-form");
+  const popup = document.getElementById("success-popup");
+
+  form.addEventListener("submit", function(e){
+    e.preventDefault();
+
+    emailjs.sendForm(
+      "service_oe9cg2h",
+      "template_n1ngw4q",
+      this
+    ).then(() => {
+        popup.classList.add("show");
+        form.reset();
+
+        setTimeout(() => {
+            popup.classList.remove("show");
+        }, 3000);
+    }, (error) => {
+        alert("Failed to send message. Please try again.");
+        console.error(error);
+    });
+  });
+</script>
+
+</body>
+</html>
