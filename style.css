@@ -226,6 +226,21 @@ nav ul li a:hover::after{
     opacity: 0;
     transition: 0.5s;
 }
+.layer{
+    pointer-events: auto;
+}
+
+.layer a{
+    pointer-events: auto;
+    position: relative;
+    z-index: 5;
+}
+.layer a{
+    color: #fff;
+    font-size: 22px;
+    margin-top: 15px;
+    cursor: pointer;
+}
 
 .work:hover .layer{
     opacity: 1;
@@ -417,4 +432,5 @@ nav .fa-solid{
         flex-basis: 100%;
 
     }
+
 }
